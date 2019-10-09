@@ -1,10 +1,10 @@
 package Lab1_Kolekcje;
 
+import com.sun.source.tree.Tree;
+
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 
 import static jdk.nashorn.internal.objects.NativeString.toUpperCase;
 
@@ -15,7 +15,8 @@ public class Czestosc {
 
         try (Scanner sc = new Scanner(new File("tekst.txt"))) {
 
-            Map<String, Integer> map = new LinkedHashMap<>();
+            Map<String, Integer> map = new TreeMap<>();
+
 
 
             while (sc.hasNext()) {
