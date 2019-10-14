@@ -19,7 +19,7 @@ public class Czestosc {
 
 
             while (sc.hasNext()) {
-
+    // błąd bo wczytał kropkę i myślnik XD stąd też kombinacje z ifem
                 String word = toUpperCase(sc.next()).replaceAll("[^\\p{L}\\p{N}]+", ""); //formuła na wczytywanie znaków unicode w regex
                 if (map.containsKey(word))
                     map.put(word, map.get(word) + 1);
