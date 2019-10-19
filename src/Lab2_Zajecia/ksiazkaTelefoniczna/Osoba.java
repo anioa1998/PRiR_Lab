@@ -43,4 +43,14 @@ public class Osoba {
         this.nazwisko = nazwisko;
         this.nrTelefonu = nrTelefonu;
     }
+
+    @Override
+    public String toString() {
+        return "Osoba{" +
+                "id=" + id +
+                ", imie='" + imie + '\'' +
+                ", nazwisko='" + nazwisko + '\'' +
+                ", nrTelefonu='" + nrTelefonu + '\'' +
+                '}';
+    }
 }
