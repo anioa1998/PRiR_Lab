@@ -6,15 +6,15 @@ public class main {
         Licznik nowyLicznik = new Licznik();
         MonitorImpl nowyMonitor = new MonitorImpl();
 
-        Thread Watek1 = new NewThread1(nowyMonitor,nowyLicznik);
-        Thread Watek2 = new NewThread2(nowyMonitor,nowyLicznik);
+        Thread Watek1 = new NewThread1(nowyMonitor, nowyLicznik);
+        Thread Watek2 = new NewThread2(nowyMonitor, nowyLicznik);
 
         Watek1.start();
         Watek2.start();
         Watek1.join();
         Watek2.join();
 
-        System.out.println(nowyLicznik.get());
+        System.out.println("Wynik: " + nowyLicznik.get());
     }
     //dwa wątki odpalamy, dwie klasy, monitor, licznik (mon i licz przekazywane do obu wątków)
     //piszemy procedury wejsciowe i wyjsciowe dla watkow obu
