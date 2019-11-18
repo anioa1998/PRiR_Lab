@@ -21,6 +21,7 @@ public class MagazynImpl implements Magazyn<String> {
         //this.element = product;
         //jestTowar = true;
         //for(int i =0; i<size; i++)
+        element[indexZapisu] = product;
         indexZapisu = (indexZapisu++) % size;
         licznik_elementow++;
         notifyAll();
@@ -37,6 +38,6 @@ public class MagazynImpl implements Magazyn<String> {
         indexOdczytu = (indexOdczytu++) % size;
         licznik_elementow--;
         notifyAll();
-        return element[indexOdczytu];
+        return element[temp];
     }
 }
